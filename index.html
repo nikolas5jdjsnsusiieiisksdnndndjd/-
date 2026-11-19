@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101d2b">
+  <meta name="description" content="Напиши листа Святому Миколаю. Твої мрії заслуговують бути почутими.">
+  <title>Пошта Святого Миколая ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="snow" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Пошта Святого Миколая — на початок">
+      <span class="brand-mark">✦</span>
+      <span>ПОШТА <i>СВЯТОГО МИКОЛАЯ</i></span>
+    </a>
+    <span class="season">ЗИМА · 2026</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> ЧАРІВНИЦТВО ПОЧИНАЄТЬСЯ ЗІ СЛІВ <span></span></div>
+        <h1>У кожного дива<br>є <em>свій лист.</em></h1>
+        <p class="intro">Святий Миколай уже готує свою чарівну пошту. Напиши йому про те, що тебе тішить, про добрі вчинки та найзаповітніші мрії.</p>
+        <a class="gold-button" href="#write">Написати листа <span>✧</span></a>
+        <div class="trust-note"><span>✦</span> Кожен лист особливий. Кожна мрія важлива.</div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Затишний казковий будиночок серед засніженого лісу">
+        <div class="moon"></div>
+        <div class="glow"></div>
+        <div class="art-caption"><span>✧</span> Десь за зорями вже чекають на твої слова</div>
+      </div>
+    </section>
+
+    <section class="steps" aria-label="Як це працює">
+      <div class="step"><span class="step-icon">✍</span><div><b>Напиши</b><small>Розкажи свою історію</small></div></div>
+      <span class="step-line"></span>
+      <div class="step"><span class="step-icon">✉</span><div><b>Надішли</b><small>Лист вирушить у дорогу</small></div></div>
+      <span class="step-line"></span>
+      <div class="step"><span class="step-icon">✦</span><div><b>Повір у диво</b><small>Мрії люблять щирість</small></div></div>
+    </section>
+
+    <section class="letter-section" id="write">
+      <div class="section-heading">
+        <div class="eyebrow dark"><span></span> ТВОЯ ЧАРІВНА МИТЬ <span></span></div>
+        <h2>Лист до Святого Миколая</h2>
+        <p>Вмощуйся зручніше — і нехай слова самі знаходять дорогу.</p>
+      </div>
+      <form id="letterForm" class="letter-card">
+        <div class="card-top"><span>✦ ОСОБИСТИЙ ЛИСТ</span><span>№ 006 · ЗИМА</span></div>
+        <div class="form-grid">
+          <label>Як тебе звати? <input name="name" maxlength="80" placeholder="Твоє ім’я" required></label>
+          <label>Скільки тобі років? <input name="age" type="number" min="1" max="17" placeholder="Вік (необов’язково)"></label>
+          <label class="wide">Звідки ти пишеш? <input name="city" maxlength="100" placeholder="Місто або село" required></label>
+          <label class="wide">Твій лист <textarea name="letter" minlength="10" maxlength="5000" rows="7" placeholder="Дорогий Святий Миколаю..." required></textarea><small class="hint">Можеш написати про свої мрії, добрі справи або просто поділитися тим, що на серці.</small></label>
+          <label class="wide">Електронна пошта когось із дорослих <input name="parentEmail" type="email" maxlength="160" placeholder="email@example.com"><small class="hint">Необов’язково. Вкажи лише з дозволу батьків або опікунів.</small></label>
+        </div>
+        <label class="consent"><input type="checkbox" required> <span>Я надсилаю лист за згодою батьків або опікунів і розумію, що його прочитають організатори пошти.</span></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="submit-button" type="submit"><span>Відправити листа</span><b>✧</b></button>
+        <p class="privacy">Твої дані потрібні лише для того, щоб отримати та прочитати лист. Не додавай у лист адресу проживання, телефон чи інші особисті дані.</p>
+        <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+    <section class="closing">
+      <div class="star">✧</div>
+      <p>«Найцінніші подарунки — це доброта, турбота<br>і віра в маленькі дива».</p>
+      <span>З теплом, Пошта Святого Миколая</span>
+    </section>
+  </main>
+  <footer><span>© 2026 Пошта Святого Миколая</span><span>Створено з вірою в диво <b>✦</b></span></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
